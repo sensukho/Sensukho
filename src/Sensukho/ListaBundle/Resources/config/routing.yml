@@ -1,0 +1,12 @@
+sensukho_lista_homepage:
+    pattern:  /inicio/{name}
+    defaults: { _controller: SensukhoListaBundle:Default:index }
+
+articulos:
+    pattern: /articulos/{lang}/{year}/{id}.{_format}
+    defaults: { _controller: SensukhoListaBundle:Default:articulos, _format : html }
+    requirements:
+        lang: en|es
+        year: \d{4}+
+        id: \d+
+        _format: html|rss

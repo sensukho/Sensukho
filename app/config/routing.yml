@@ -1,0 +1,4 @@
+sensukho_lista:
+    resource: "@SensukhoListaBundle/Resources/config/routing.yml"
+    prefix:   /
+
